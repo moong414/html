@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+@import url('./reset.css');
+@import url('./font.css');
+
+
+/* 변수 ========================================== */
+:root {
+    /* color */
+    --color-primary: #1D6ED8;
+    --color-warning: #EB3F42;
+    --color-text: #222222;
+    --color-text-sub: #999999;
+    --color-border-gray: #cccccc;
+    --color-border-blue: #D4DDEB;
+    --color-bg-gray: #F1F1F1;
+
+    /* font */
+    --font-family-base: 'Pretendard', sans-serif;
+    --font-size-base: 16px;
+
+    /* spacing */
+    --spacing-1: 0.5rem;/* 8px */
+    --spacing-2: 1rem;/* 16px */
+    --spacing-3: 1.5rem;/* 24px */
+
+    /* radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    :root {
+        --font-size-base: 15px;
+
+        /* spacing */
+        --spacing-1: 0.4rem;/* 6px */
+        --spacing-2: 0.8rem; /* 12px */
+        --spacing-3: 1.2rem; /* 18px */
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 14px;
+    }
+}
+
+
+/* 공통 ========================================== */
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+}
+
+a:link,
+a:visited {
+    color: var(--color-text);
+    text-decoration: none
+}
+
+a:active,
+a:hover,
+a:focus {
+    color: var(--color-text);
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.sr_only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.sr_only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+
+.skip_navi {
+    position: relative;
+    z-index: 9999;
+}
+
+.skip_navi a {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    outline: none
+}
+
+.skip_navi a:focus,
+.skip_navi a:active {
+    top: 0;
+    overflow: visible;
+    clip: unset
+}
+
+.skip_navi a:focus span {
+    outline: 1px solid #fff
+}
+
+.clear_fix::after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.hide {
+    display: none
+}
+
+.hidden {
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    line-height: 0;
+    font-size: 0;
+    text-indent: -9999999px
+}
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.4);
+}
+
+/* table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;         
+  width: 100%;             
+}
+th,
+td {        
+  vertical-align: middle;
+}
+caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+/* color */
+.col_bk{color: var(--color-text);}
+.col_gry{color: var(--color-text-sub);}
+.col_red{color: var(--color-warning);}
+.col_bl{color: var(--color-primary);}

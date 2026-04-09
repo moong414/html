@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>위험성 평가 연동 안전관리 시스템</title>
-    <meta property="og:title" content="위험성 평가 연동 안전관리 시스템">
-    <meta property="og:description" content="안전관리 시스템 웹페이지입니다.">
+    <title>공부용 HTML 샘플</title>
+    <meta property="og:title" content="공부용 HTML 샘플">
+    <meta property="og:description" content="공부용 HTML 샘플 웹페이지입니다.">
     <meta property="og:image" content="https://moong414.github.io/html/assets/images/og.png">
     <meta property="og:url" content="https://moong414.github.io/html/">
     <meta property="og:type" content="website">
@@ -15,358 +15,29 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <!-- skip_navi -->
-    <div class="skip_navi">
-        <ul>
-            <li class="pc_skip"><a href="#gnb" tabindex="1"><span>메인 메뉴로 바로가기</span></a></li>
-            <li><a href="#cont_visual" tabindex="1"><span>본문으로 바로가기</span></a></li>
-        </ul>
-    </div>
-    <!--//skip_navi -->
+  <div class="container">
+    <h1>📁 HTML 샘플 모음</h1>
+    <p>공부하면서 만든 화면들</p>
 
-    <div id="wrap">
-        <!-- side_menu -->
-        <div class="side_wrap">
-            <button class="close_btn" title="메뉴닫기"></button>
-            <h1 class="logo"><a href="#" title="메인으로"><img src="./assets/images/logo.svg" alt="위험성평가연동안전관리시스템 로고"></a></h1>
-            
-            <div class="side_menu">
-                <p class="side_menu_tit">메인</p>
-                <ul class="side_menu_list">
-                    <li><a href="#">홈/현장</a></li>
-                    <li class="active"><a href="#">위험성 평가 <span class="badge">3</span></a>
-                        <ul class="side_sub_list">
-                            <li><a href="">사전준비</a></li>
-                            <li><a href="">유해위험요인 파악</a></li>
-                            <li class="active"><a href="">승인 / 반려 <span class="badge">3</span></a></li>
-                            <li><a href="">위험감소 대책</a></li>
-                            <li><a href="">기록 / 보존</a></li>
-                            <li><a href="">체크리스트 템플릿</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">현장 안전 활동<span class="badge">2</span></a>
-                        <ul class="side_sub_list">
-                            <li><a href="">위험 / 제안 신고 <span class="badge">2</span></a></li>
-                            <li><a href="">일일 안전점검</a></li>
-                            <li><a href="">아차사고 등록</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">TBM / 교육</a>
-                        <ul class="side_sub_list">
-                            <li><a href="">TBM 목록</a></li>
-                            <li><a href="">안전교육 이수</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">문서 / 통계</a>
-                        <ul class="side_sub_list">
-                            <li><a href="">서류 등록</a></li>
-                            <li><a href="">통계 대시보드</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- //side_menu -->
-        <div class="overlay"></div>
-        <div class="contents_wrap">
-            <header class="header">
-                <p class="logo_wt"><a href="#" title="메인으로"><img src="./assets/images/logo_mb.svg" alt="위험성평가연동안전관리시스템 로고"></a></p>
-                <button class="menu_toggle" title="메뉴보기"></button>
-                <nav id="gnb">
-                    <ul>
-                        <li class="active"><a href="#">메인</a></li>
-                        <li><a href="#">현장관리</a></li>
-                        <li><a href="#">시스템</a></li>
-                    </ul>
-                </nav>
-                <div class="utils mb_none">
-                    <p class="util_info"><span class="bold">나주시 빛가람동</span>2026.03.18 (수) · 마지막 업데이트 09:02</p>
-                    <a href="#" class="util_alarm on" title="새소식"><span class="sr_only">새소식</span></a>
-                    <div class="util_my">
-                        <p class="my_name">김OO</p>
-                        <span class="my_task">담당자</span>
-                        <a href="#" class="my_photo"><img src="assets/images/img_Sample.png" alt="프로필사진"></a>
-                    </div>
-                </div>
-            </header>
-            <section class="main_section">
-                <h2 class="section_tit">홈/현장</h2>
-                <div class="main_row">
-                    <a href="" class="emergency_box" title="바로가기">
-                        <div class="emer_tit_box">
-                            <p class="emer_tit">긴급상황 발령: 3층 철근 작업 구역 낙하 위험</p>
-                            <ul class="txt_line_list">
-                                <li>발령: 박OO</li>
-                                <li>2026.03.24 14:45:00:00</li>
-                                <li>현재 작업 중지 상태</li>
-                            </ul>
-                        </div>
-                        <span href="#" class="emer_link">상세보기</span>
-                    </a>
-                </div>
-                <div class="main_row">
-                    <div class="main_col_left">
-                        <div class="main_summary">
-                            <div class="summary sum01">
-                                <p class="sum_tit">무사고 일수</p>
-                                <p class="sum_count">247</p>
-                                <p class="sum_info">전일 대비 + 1</p>
-                            </div>
-                            <div class="summary sum02">
-                                <p class="sum_tit">이번 분기 평가</p>
-                                <p class="sum_count">24</p>
-                                <p class="sum_info">승인완료 18건</p>
-                            </div>
-                            <div class="summary sum03">
-                                <p class="sum_tit">교육 이수율</p>
-                                <p class="sum_count">96<span class="txt_s">%</span></p>
-                                <p class="sum_info">근로자 48/50</p>
-                            </div>
-                            <div class="summary sum04">
-                                <p class="sum_tit">이번달 신고</p>
-                                <p class="sum_count">2</p>
-                                <p class="sum_info">조치 대기중</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main_col_right">
-                        <div class="main_board_box">
-                            <div class="board_top">
-                                <h3 class="board_tit">빠른실행</h3>
-                                <a href="" class="board_btn setting" title="바로가기"><span class="sr_only">세팅 바로가기</span></a>
-                            </div>
-                            <div class="board_bot">
-                                <div class="quick_btns">
-                                    <a href="" class="quick_btn"><span>RA</span>위험성 평가 등록</a>
-                                    <a href="" class="quick_btn"><span>RA</span>위험성 평가 등록</a>
-                                    <a href="" class="quick_btn"><span>RA</span>위험성 평가 등록</a>
-                                    <a href="" class="quick_btn"><span>RA</span>위험성 평가 등록</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="main_row">
-                    <div class="main_col_left">
-                        <div class="main_board_box">
-                            <div class="board_top">
-                                <h3 class="board_tit">진행 중인 위험성 평가</h3>
-                                <a href="" class="board_btn" title="바로가기"><span class="sr_only">바로가기</span></a>
-                            </div>
-                            <div class="board_bot">
-                                <div class="main_table">
-                                    <table>
-                                        <caption>진행중인 위험성 평가 평가명, 단계, 담당자, 기한, 상태를 나타내는 표</caption>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">평가명</th>
-                                                <th scope="col">단계</th>
-                                                <th scope="col">담당자</th>
-                                                <th scope="col">기한</th>
-                                                <th scope="col">상태</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="#" class="tit_link">2026년 1분기 정기평가 <span class="txt_s">거푸집 조립·해체</span></a></td>
-                                                <td><p class="badge col_org">위험감소대책</p></td>
-                                                <td>김OO</td>
-                                                <td>01.31</td>
-                                                <td><p class="badge col_bl">진행중</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#" class="tit_link">2026년 1분기 정기평가 <span class="txt_s">거푸집 조립·해체</span></a></td>
-                                                <td><p class="badge col_gry">승인대기</p></td>
-                                                <td>김OO</td>
-                                                <td>01.31</td>
-                                                <td><p class="badge col_gry">승인대기</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#" class="tit_link">2026년 1분기 정기평가 <span class="txt_s">거푸집 조립·해체</span></a></td>
-                                                <td><p class="badge col_red">반려</p></td>
-                                                <td>김OO</td>
-                                                <td><span class="col_red">재작성 필요</span></td>
-                                                <td><p class="badge col_red">반려</p></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main_col_right">
-                        <div class="main_board_box">
-                            <div class="board_top">
-                                <h3 class="board_tit">오늘 날씨·작업 여건</h3>
-                                <a href="" class="board_btn" title="바로가기"><span class="sr_only">바로가기</span></a>
-                            </div>
-                            <div class="board_bot">
-                                <div class="main_weather">
-                                    <div class="weat_tit_box">
-                                        <span class="weat_icon"><img src="assets/images/ico_sunny.png" alt="맑음"></span>
-                                        <p class="weat_tit"><span>8</span>°C</p>
-                                        <p class="weat_info">맑음 · 북서풍 4m/s</p>
-                                    </div>
-                                    <div class="work_info"><span>작업 가능 조건</span><p>고온·강풍 위험 없음</p></div>
-                                    <div class="weat_table">
-                                        <table>
-                                            <caption>오늘 날씨의 습도, 자외선 지수, 대기질을 나타내는 표</caption>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">습도</th>
-                                                    <td>52%</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">자외선 지수</th>
-                                                    <td>2 (낮음)</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">대기 질</th>
-                                                    <td><p class="badge col_gr">좋음</p></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main_board_box">
-                            <div class="board_top">
-                                <h3 class="board_tit">공지사항 및 최근 활동</h3>
-                                <a href="" class="board_btn" title="바로가기"><span class="sr_only">바로가기</span></a>
-                            </div>
-                            <div class="board_bot">
-                                <div class="main_table notice_table">
-                                        <table>
-                                            <caption>공지사항 및 최근활동의 이용자명, 최근활동명, 시간을 나타내는 표</caption>
-                                            <colgroup>
-                                                <col width="90%">
-                                                <col width="10%">
-                                            </colgroup>
-                                            <tbody>
-                                                <tr class="notice_first">
-                                                    <th scope="row">
-                                                        <a href="" class="tit_link">
-                                                            <p class="notice_first_tit">
-                                                            <span>공지사항</span>3층 철근 작업 중지
-                                                        </p>
-                                                        </a>
-                                                    </th>
-                                                    <td class="notice_date">09:01</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="" class="tit_link">박민수<span class="col_gry">가</span> 전기설비 평가 반려 처리</a></th>
-                                                    <td class="notice_date">09:01</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="" class="tit_link">이현우<span class="col_gry">가</span> 위험 신고 등록</a></th>
-                                                    <td class="notice_date">어제</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="" class="tit_link">김대리<span class="col_gry">가</span> 대책 수립 완료</a></th>
-                                                    <td class="notice_date">어제</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="main_row">
-                    <div class="main_col_left">
-                        <div class="main_board_box">
-                            <div class="board_top">
-                                <h3 class="board_tit">오늘의 TBM / 교육 일정 <p class="board_tit_badge col_gry">진행예정</p></h3>
-                                <a href="" class="board_btn" title="바로가기"><span class="sr_only">바로가기</span></a>
-                            </div>
-                            <div class="board_bot">
-                                <ul class="schedule_list">
-                                    <li>
-                                        <div class="sche_tit">
-                                            <p>오전 안전 미팅</p>
-                                            <ul class="txt_line_list">
-                                                <li>08:00</li>
-                                                <li>현장 사무실</li>
-                                                <li>12명 참석 예정</li>
-                                            </ul>
-                                        </div>
-                                        <a href="" class="main_btn col_bl">참석확인</a>
-                                    </li>
-                                    <li>
-                                        <div class="sche_tit">
-                                            <p>오전 안전 미팅</p>
-                                            <ul class="txt_line_list">
-                                                <li>08:00</li>
-                                                <li>현장 사무실</li>
-                                                <li>12명 참석 예정</li>
-                                            </ul>
-                                        </div>
-                                        <a href="" class="main_btn col_bl">참석확인</a>
-                                    </li>
-                                    <li>
-                                        <div class="sche_tit">
-                                            <p>상반기 안전보건교육</p>
-                                            <ul class="txt_line_list">
-                                                <li>법정</li>
-                                                <li>진행률 63%</li>
-                                            </ul>
-                                        </div>
-                                        <a href="" class="main_btn col_gry">이어보기</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main_col_right">
-                         <div class="main_board_box">
-                            <div class="board_top">
-                                <h3 class="board_tit">최근 위험/제안 신고<p class="board_tit_badge col_red">미처리 <span class="col_red">1건</span></p></h3>
-                                <a href="" class="board_btn" title="바로가기"><span class="sr_only">바로가기</span></a>
-                            </div>
-                            <div class="board_bot">
-                                <ul class="schedule_list">
-                                    <li>
-                                        <div class="sche_tit">
-                                            <p>작업장 하단 돌출 부위 발생 ㅡ 3층 서측</p>
-                                            <ul class="txt_line_list">
-                                                <li>김OO</li>
-                                                <li>03.17 신고 </li>
-                                                <li><span class="col_red">신고 2일 경과</span></li>
-                                            </ul>
-                                        </div>
-                                       <a href="" class="main_btn line_blue">조치</a>
-                                    </li>
-                                    <li>
-                                        <div class="sche_tit">
-                                            <p>작업장 하단 돌출 부위 발생 ㅡ 3층 서측</p>
-                                            <ul class="txt_line_list">
-                                                <li>김OO</li>
-                                                <li>03.17 신고 </li>
-                                                <li><span class="col_red">신고 2일 경과</span></li>
-                                            </ul>
-                                        </div>
-                                       <a href="" class="main_btn line_blue">조치</a>
-                                    </li>
-                                    <li>
-                                        <div class="sche_tit">
-                                            <p>임시 전선 피복 손상 ㅡ 2층 배선반</p>
-                                            <ul class="txt_line_list">
-                                                <li>이OO</li>
-                                                <li>03.11 신고</li>
-                                                <li>03.12 완료</li>
-                                            </ul>
-                                        </div>
-                                       <a href="" class="main_btn line_gray">조치완료</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <a href="#" class="btn_chat"><span class="chat_tit">AI 챗봇</span></a>
+    <div class="list">
+      <a href="./sample1/" class="card">
+        <h2>위험성 평가 연동 안전관리 시스템</h2>
+        <span>시안 1</span>
+      </a>
+
+      <a href="./sample2/" class="card">
+        <h2>위험성 평가 연동 안전관리 시스템</h2>
+        <span>시안 2</span>
+      </a>
+
+      <!-- 필요하면 계속 추가 -->
+      <!--
+      <a href="./sample3/" class="card">
+        <h2>Sample 3</h2>
+        <span>설명</span>
+      </a>
+      -->
     </div>
+  </div>
 </body>
 </html>
